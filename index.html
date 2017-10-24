@@ -293,17 +293,98 @@
     //         document.write(res[i] + '<br>')
     // }
 
-    var stringTxt = 'Иван вчера потерял свою кредитку, ее номер 1178-9087-2384-8787. Поэтому он пошел в банк и описал ситуацию. Там пошли ему навстречу и выдали новую кредитку под номером: 1103-8899-0811-1722',
-        regV = /\d{4}-\d{4}-\d{4}-\d{4}/g;
-        var res = stringTxt.match(regV);
-        document.write(res);
+    // var stringTxt = 'Иван вчера потерял свою кредитку, ее номер 1178-9087-2384-8787. Поэтому он пошел в банк и описал ситуацию. Там пошли ему навстречу и выдали новую кредитку под номером: 1103-8899-0811-1722',
+    //     regV = /[0-4]{4}-\d{4}-\d{4}-\d{4}/g;
+    //     var res = stringTxt.match(regV);
+    //     document.write(res);
+
+    // var regV = /\//g;
+    // var sign = "2";
+    // var sk = "54";
+
+    // function numPh(slash, linePh) {
+    //     var tel = "8/927/31/10/765";
+    //     var res = tel.replace(slash, linePh);
+    //     document.write(res)
+    // }
+    // numPh(regV, sk);
+
+    //     var randSimbol = ["Молоко", 77, 11, "Мед", -88];
+
+    //     function arrTest(arrStr){
+    //         for(i = 0; i < arrStr.length; i++){
+    //             if(isNaN(arrStr[i])){
+    //                 document.write('Не число ');
+    //             } else{
+    //                 document.write('Число ')
+    //             };
+    //         };
+
+    //     };
+
+    // arrTest(randSimbol)
+
+    // var myArray = ["100 попугаев", "201 рубль", "624 доллара", "109 кроликов", "33 весельчака", "62 кабана"];
+    // function arrTest(arrStr){
+    //     for( i = 0; i < arrStr.length; i++ ){
+    //         document.write(parseFloat(arrStr[i]) + ' ');
+    //     };
+
+    // };
+    // arrTest(myArray);
+    // var randSimbol = [10.5, 15, 112, 77.6];
+    //     function arrTest(numStr){
+    //         for(i=0; i < numStr.length; i++){
+    //             document.write(numStr[i].toFixed(2) + ' ');
+    //         }
+    //     }
 
 
+    // arrTest(randSimbol);
 
+    // var numberArray = [34.82, 12.90, 17.01, 78.51];
 
+    // function numTest(arrStr, mathArr) {
+    //     for (i = 0; i < arrStr.length; i++) {
+    //         if(mathArr == 'round'){
+    //             document.write(Math.round(arrStr[i]) + ' ');
+    //         }
+    //         else if(mathArr == 'ceil'){
+    //             document.write(Math.ceil(arrStr[i]) + ' ');
+    //         }
+    //         else if(mathArr == 'floor'){
+    //             document.write(Math.floor(arrStr[i]) + ' ');
+    //         }
+    //         else{
+    //             alert('Nothing')
+    //         };
+    //     };
+    // };
+    // numTest(numberArray, 'round');
+    // var randomArray = new Array(10);
 
+    // function arrTest(emptyArr, startNum, endNum) {
+    //     for (i = 0; i < 10; i++) {
+    //         document.write(Math.floor(Math.random(emptyArr[i]) * (endNum  + startNum + 1)) + startNum + ' ');
+    //     }
+    // }
+    // arrTest(randomArray, 100, 1000)
 
+    // var mainDate = new Date(),
+    //     hour = mainDate.getHours(),
+    //     min = mainDate.getMinutes(),
+    //     sec = mainDate.getSeconds();
+    //     if (min <= 9 ) {
+    //         min = '0' + mainDate.getMinutes();
+    //     }else{
+    //         min = mainDate.getMinutes();
+    //     }
+    // document.write(hour + ':' + min + ':' + sec)
 
+    var mainDate = new Date();
+    var day = mainDate.getDay();
+    var randomArray = new Array('Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб');
+    document.write(randomArray[day]);
 
 
 
