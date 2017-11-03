@@ -381,12 +381,29 @@
     //     }
     // document.write(hour + ':' + min + ':' + sec)
 
-    var mainDate = new Date();
-    var day = mainDate.getDay();
-    var randomArray = new Array('Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб');
-    document.write(randomArray[day]);
+    // var mainDate = new Date();
+    // var day = mainDate.getDay();
+    // var randomArray = new Array('Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб');
+    // document.write(randomArray[day]);
 
 
+
+    // var options;
+
+    // for(options in navigator){
+    //     document.write(options + ' -- ' + navigator[options] + '<br>')
+    // }
+
+    switch(navigator.userAgent){
+        case 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36':
+        alert('Вы вошли через Chrome');
+        break;
+        case 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; rv:11.0) like Gecko':
+        alert('Вошли через ES');
+        break;
+        default:
+        alert('Другой браузер');
+    }
 
 
 
