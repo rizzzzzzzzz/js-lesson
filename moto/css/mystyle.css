@@ -1,4 +1,4 @@
-﻿body
+body
 {
 	background-color: #151424;
 	background-image: url('../images/bg000000.jpg');
@@ -133,7 +133,4 @@ textarea
 #sale
 {
 	margin-top: 20px;
-}
-#div_for_im + p{
-	border: 1px solid red;
 }

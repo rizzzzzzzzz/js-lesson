@@ -1,3 +1,9 @@
 $(function(){
-	$('#div_for_img img:not(#div_for_img img:first-of-type)').hide(5000)
+	$('img').each(function(){
+		$(this).on('click', function(){
+			if($(this).height() > 50 && $(this).height() < 100){
+				$(this).toggle(1000)
+			};
+		});
+	});
 });
