@@ -8,14 +8,25 @@
 
 <body>
     <script>
-    var day = 15;
-    if (day <= 10) {
-    	alert('pervay')
-    } else if(day > 10 && day <= 20){
-    	alert('vtoray')
-    }else{
-    	alert('tretay')
+
+    var num = [15, 6, 4, 31, 3, 1];
+    var number = 0;
+    var flag = false;
+    function numberF(secNum) {
+    for (i = 0; i < secNum.length; i++) {
+        number += secNum[i];
+        if(secNum == secNum){
+            flag = true;
+        }
+       }   
+       if(flag === true){
+        alert('da')
+       }else{
+        alert('next')
+       }
     }
+
+    alert(numberF(num))
     </script>
 </body>
 
